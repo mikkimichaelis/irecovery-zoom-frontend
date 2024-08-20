@@ -12,3 +12,4 @@ COPY server.js server.js
 # RUN npm ci --only=production
 
 CMD [ "npm", "run", "server" ]
+# CMD ["npx", "pm2-runtime", "--public", "1z47ay8748m9vy0", "--secret", "anzailarhed24wx", "server.js"]
