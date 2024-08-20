@@ -9,7 +9,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "npx pm2-runtime --public anzailarhed24wx --secret 1z47ay8748m9vy0 server.js",
+    "server": "npx pm2-runtime --public anzailarhed24wx --secret 1z47ay8748m9vy0 --machine-name irecovery.zoom.frontend server.js",
     "image": "docker build -t mikkimichaelis/irecovery-zoom-frontend:latest . && docker push mikkimichaelis/irecovery-zoom-frontend:latest"
   },
   "dependencies": {
