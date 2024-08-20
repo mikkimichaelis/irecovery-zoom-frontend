@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "/api/zoomapp/proxy",
   "scripts": {
-    "start": "(npm run build); (node ./server.js);",
+    "start": "react-scripts start",
     "debug": "(npm run build); (node --inspect=0.0.0.0  ./server.js);",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -16,12 +16,17 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.4.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "express": "^4.19.2",
     "express-requests-logger": "^4.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "serve": "^14.2.3",
+    "typescript": "^5.5.4",
     "web-vitals": "^2.1.4"
   },
   "eslintConfig": {
