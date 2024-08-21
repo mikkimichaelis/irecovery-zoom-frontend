@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "/api/zoomapp/proxy",
   "scripts": {
-    "start": "react-scripts start",
-    "debug": "(npm run build); (node --inspect=0.0.0.0  ./server.js);",
+    "start": "PORT=9090 react-scripts start",
+    "debug": "node ./server.js);",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -20,6 +20,7 @@
     "@types/node": "^22.4.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-requests-logger": "^4.0.1",
     "pm2": "^5.4.2",
