@@ -5,12 +5,13 @@
   "homepage": "/api/zoomapp/proxy",
   "scripts": {
     "start": "PORT=9090 react-scripts start",
-    "debug": "node ./server.js);",
+    "debug": "node ./server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "npx pm2-runtime --public anzailarhed24wx --secret 1z47ay8748m9vy0 --machine-name irecovery.zoom.frontend server.js",
-    "image": "docker build -t mikkimichaelis/irecovery-zoom-frontend:latest . && docker push mikkimichaelis/irecovery-zoom-frontend:latest"
+    "image": "docker build -t mikkimichaelis/irecovery-zoom-frontend:latest . && docker push mikkimichaelis/irecovery-zoom-frontend:latest",
+    "build:dev": "react-scripts build && docker build -t mikkimichaelis/irecovery-zoom-frontend:dev ."
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
